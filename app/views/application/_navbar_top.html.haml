@@ -1,0 +1,14 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      = collapse_tag
+      = link_to (@current_term || root_path), class: 'navbar-brand' do
+        = t('app.name')
+    .collapse.navbar-collapse#collapse-menu
+      %ul.nav.navbar-nav
+        %li= link_to 'Сотрудники', ?#
+        %li= link_to 'Подразделения', ?#
+        %li= link_to 'Замены', ?#
+        %li= link_to 'Статитика', ?#
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to 'Выход', ?#

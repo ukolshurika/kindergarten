@@ -1,0 +1,24 @@
+!!!
+%html{ lang: 'ru' }
+  %head
+    %title `#{t('app.company.short_name')}. #{t('app.name')}`
+    %meta{ charset: 'utf-8' }
+    %meta{ 'http-equiv' => 'X-UA-Compatible', 'content' => 'IE=edge' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+    = favicon_link_tag 'favicon-32x32.png', sizes: '32x32'
+    = favicon_link_tag 'apple-icon.png', rel: 'apple-touch-icon'
+  %body
+    = render 'application/navbar_top'
+    .container-fluid.body-container
+      - if content_for? :breadcrumb
+        .container-breadcrumbs= yield :breadcrumb
+      = render 'application/flash_messages'
+      - if content_for? :error_messages
+        = yield :error_messages
+      = yield
+    = render 'application/footer'
+    #modal_wrapper

@@ -1,0 +1,175 @@
+
+@include text-emphasis-variant('.text-purple', $brand-purple)
+
+body
+  padding-top: 80px
+  font-family: 'Open Sans', sans-serif
+  font-weight: normal
+
+.body-container
+  padding-left: $body-container-padding
+  padding-right: $body-container-padding
+
+
+.light
+  font-weight: 100
+
+.bold
+  font-weight: 600
+
+.upcase
+  text-transform: uppercase
+
+.intro
+  font-family: 'Intro'
+
+.navbar-fixed-top
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4)
+
+.navbar-brand
+  height: auto
+  text-transform: uppercase
+  font-family: 'Intro'
+  .brand-logo
+    display: inline
+    height: 30px
+    margin: -$padding-base-horizontal $padding-base-horizontal $padding-base-horizontal/-2
+
+.has-error .form-control:focus, .form-control:focus
+  box-shadow: none
+
+.field_with_errors
+  @extend .has-error
+
+a
+  transition: all .5s
+  &:hover, &:active, &:focus
+    text-decoration: none
+
+.label
+  font-weight: normal
+  border-radius: 0
+
+.alert-block
+  position: absolute
+  right: 0
+  top: 70px
+  z-index: 5
+  margin-right: 30px
+  opacity: .8
+
+.growl-msg
+  display: none
+
+.btn-toolbar
+  margin: 10px 0
+
+.table
+  th
+    text-align: center
+    vertical-align: middle !important
+
+.actions
+  margin: $padding-base-vertical 0
+
+label.required:after
+  content: "*"
+  color: $brand-danger
+
+.container-breadcrumbs
+  text-align: right
+
+.table-default
+  @extend .table-condensed
+  @extend .table-bordered
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-weight: 100
+
+.dashed
+  border-bottom: 1px dashed
+
+.label-purple
+  @include label-variant($brand-purple)
+
+.label-lime
+  @include label-variant($brand-lime)
+
+.label-brown
+  @include label-variant($brand-brown)
+
+.label-pink
+  @include label-variant($brand-pink)
+
+.label-steel
+  @include label-variant($brand-steel)
+
+.label-blue
+  @include label-variant($brand-blue)
+
+.nav-tabs
+  margin-bottom: $padding-large-vertical
+
+.no-margin
+  margin: 0
+
+.tiny
+  font-size: 60%
+
+.panel-narrow
+  margin-bottom: $padding-base-vertical
+  .panel-body
+    padding: $padding-base-vertical
+  .alert
+    padding: $padding-base-vertical
+  .form-group
+    margin-bottom: 0
+
+.overflow-auto
+  overflow: auto
+
+table.floatThead-table
+  border-top: none
+  border-bottom: none
+  background-color: #fff
+  padding-top: 100px
+
+.boot_check, .boot_check_all
+  cursor: pointer
+  width: 16px
+  text-align: center
+  &.active
+    @extend .fa-check-square
+
+.nowrap
+  white-space: nowrap
+
+.pad-h-l
+  padding-left: 5px
+.navbar-toggle
+  background: $gray-lighter
+hr.dotted
+  border-top: 2px dotted #000
+  margin: 0
+  padding: 2px
+
+.font-narrow
+  // font-family: Proxima Nova Condensed, "Proxima Nova Condensed"
+  letter-spacing: -1px
+.highlight
+  transition: all .5s
+  background: $brand-highlight !important
+.inline
+  display: inline
+.dropdown-narrow
+  li
+    a
+      padding: 2px 4px
+.table-narrow
+  width: auto
+.table-hard
+  th, td
+    padding: 2px !important
+.no-appearance
+  -webkit-appearance: none
+  -moz-appearance: textfield

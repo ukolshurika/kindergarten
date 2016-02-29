@@ -1,0 +1,28 @@
+$values: ('0', '2','3', '5', '7', '10', '15', '20', '27')
+
+@each $value in $values
+  .mrg-#{$value}
+    margin: #{$value}px
+  .mrgl-#{$value}
+    margin-left: #{$value}px
+  .mrgr-#{$value}
+    margin-right: #{$value}px
+  .mrgt-#{$value}
+    margin-top: #{$value}px
+  .mrgb-#{$value}
+    margin-bottom: #{$value}px
+  .pdg-#{$value}
+    padding: #{$value}px
+  .pdgl-#{$value}
+    padding-left: #{$value}px
+  .pdgr-#{$value}
+    padding-right: #{$value}px
+  .pdgt-#{$value}
+    padding-top: #{$value}px
+  .pdgb-#{$value}
+    padding-bottom: #{$value}px
+
+.display-inline-block
+  display: inline-block
+.display-inline
+  display: inline

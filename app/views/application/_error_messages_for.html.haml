@@ -1,0 +1,6 @@
+-if msgs.present?
+  .alert.alert-danger
+    %h4 При сохранении произошли ошибки
+    %ul
+      -msgs.each do |msg|
+        %li=msg

@@ -1,0 +1,22 @@
+ru:
+  time:
+    formats:
+      default: "%d.%m.%Y %H:%M"
+  date:
+    capitalized_month_names:
+    - Январь
+    - Февраль
+    - Март
+    - Апрель
+    - Май
+    - Июнь
+    - Июль
+    - Август
+    - Сентябрь
+    - Октябрь
+    - Ноябрь
+    - Декабрь
+  app:
+    name: Учёт рабочего времени
+    company:
+      short_name: НИЯУ МИФИ
